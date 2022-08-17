@@ -84,4 +84,14 @@ def test_64_bytes():
   assert x == '9fb8bfb2c9be8faf12d3c01965eef481fffae76cf5dae1ddfc8e75845df09494'
 
 
+def test_fox_1():
+  x = sha256.hash('The quick brown fox jumps over the lazy dog')
+  assert x == 'd7a8fbb307d7809469ca9abcb0082e4f8d5651e46d3cdb762d02d0bf37c9e592'
+
+
+def test_fox_1():
+  x = sha256.hash('The quick brown fox jumps over the lazy cog')
+  assert x == 'e4c4d8f3bf76b692de791a173e05321150f7a345b46484fe427f6acc7ecc81be'
+
+
 
