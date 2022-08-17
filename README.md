@@ -61,7 +61,7 @@ Code style:
 
 ```bash
 
-pycodestyle example_python3_package/code/hello.py
+pycodestyle sha256/code/hello.py
 
 pycodestyle --filename=*.py
 
