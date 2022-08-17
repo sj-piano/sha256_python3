@@ -85,8 +85,18 @@ Developed with:
 
 
 
+# Background
 
+Original package:  
+https://github.com/thomdixon/pysha2
 
+> pysha2 is a pure Python implementation of the FIPS 180-2 secure hash standard.
+
+Author: Thom Dixon
+
+Ported to Python 3 by Nicholas Piano.
+
+Re-structured into its current package layout by StJohn Piano.
 
 
 
