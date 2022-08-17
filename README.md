@@ -96,7 +96,7 @@ Author: Thom Dixon
 
 Ported to Python 3 by Nicholas Piano.
 
-Re-structured into its current package layout by StJohn Piano.
+Re-formatted into its current package layout by StJohn Piano.
 
 
 
