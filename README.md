@@ -79,7 +79,7 @@ Settings for pycodestyle are stored in the file `tox.ini`.
 # Development
 
 Developed with:
-- Ubuntu 16.04 on WSL on Windows 10
+- Ubuntu 16.04 on WSL (Windows Subsystem for Linux) on Windows 10
 - Python 3.5.2
 - pytest 6.1.2
 
