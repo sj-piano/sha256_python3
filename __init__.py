@@ -20,6 +20,7 @@ from . import sha256
 # This file allows a parent package to run this:
 # import sha256
 # sha256.hello()
+# result = sha256.hash(ascii_input_string)
 hello = sha256.code.hello.hello
 validate = sha256.util.validate
 configure_module_logger = sha256.util.module_logger.configure_module_logger
