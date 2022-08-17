@@ -79,4 +79,9 @@ def test_lorem_ipsum():
   assert x == 'a58dd8680234c1f8cc2ef2b325a43733605a7f16f288e072de8eae81fd8d6433'
 
 
+def test_64_bytes():
+  x = sha256.hash("A string with a length of exactly 64 bytes. [filler text .....]")
+  assert x == '9fb8bfb2c9be8faf12d3c01965eef481fffae76cf5dae1ddfc8e75845df09494'
+
+
 
