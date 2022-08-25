@@ -18,7 +18,7 @@ from . import sha256
 
 # Collect up the things that we want in the immediate namespace of this module when it is imported.
 # This file allows a parent package to run this:
-# import sha256
+# import sha256_python3 as sha256
 # sha256.hello()
 # result_bytes = sha256.SHA256(ascii_input_string).digest()
 # result_bytes = sha256.digest(ascii_input_string)
