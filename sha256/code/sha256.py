@@ -146,6 +146,9 @@ class SHA256:
     if isinstance(m, str):
       m = m.encode()
 
+    if not isinstance(m, bytes):
+      raise TypeError("Expected type 'bytes', but instead received '{}'.".format(type(m).__name__))
+
     if not m:
       return
 
@@ -176,10 +179,15 @@ class SHA256:
 
 
 
-def hash(data):
-  # Accept a data string and return a hash string.
-  if not isinstance(data, str):
-    msg = "Expected data to be type 'string', but instead received type '{}'.".format(type(data).__name__)
-    raise TypeError(msg)
+# Shortcuts
+
+
+def digest(data):
+  return SHA256(data).digest()
+
+
+def hexdigest(data):
   return SHA256(data).hexdigest()
+
+
 

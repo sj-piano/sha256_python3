@@ -20,12 +20,17 @@ from . import sha256
 # This file allows a parent package to run this:
 # import sha256
 # sha256.hello()
-# result = sha256.hash(ascii_input_string)
+# result_bytes = sha256.SHA256(ascii_input_string).digest()
+# result_bytes = sha256.digest(ascii_input_string)
+# result_bytes = sha256.digest(input_bytes)
+# result_hex = sha256.hexdigest(ascii_input_string)
 hello = sha256.code.hello.hello
 validate = sha256.util.validate
 configure_module_logger = sha256.util.module_logger.configure_module_logger
 #submodules = sha256.submodules
-hash = sha256.code.sha256.hash
+SHA256 = sha256.code.sha256.SHA256
+digest = sha256.code.sha256.digest
+hexdigest = sha256.code.sha256.hexdigest
 
 
 
