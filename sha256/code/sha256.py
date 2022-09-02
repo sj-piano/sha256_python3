@@ -101,6 +101,7 @@ class SHA256:
   blocksize = 1
   block_size = 64
   digest_size = 32
+  name = 'SHA256'
 
 
   def __init__(self, m=None):
@@ -146,11 +147,13 @@ class SHA256:
     if isinstance(m, str):
       m = m.encode()
 
-    if not isinstance(m, bytes):
-      raise TypeError("Expected type 'bytes', but instead received '{}'.".format(type(m).__name__))
-
     if not m:
       return
+
+    permitted_types = 'bytes memoryview'.split()
+    if not isinstance(m, bytes) and not isinstance(m, memoryview):
+      msg = "Expected a type in the list {}, but instead received '{}'.".format(permitted_types, type(m).__name__)
+      raise TypeError(msg)
 
     self._counter += len(m)
     m = self._cache + m
