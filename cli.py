@@ -205,7 +205,8 @@ def get_python_version(a):
 
 
 def get_sha256(a):
-  result = sha256.code.sha256.hexdigest(6)
+  data = a.data
+  result = sha256.code.sha256.hexdigest(data)
   print(result)
 
 
